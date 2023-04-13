@@ -20,7 +20,11 @@ createApp({
             if(isNext) this.counter++;
             else this.counter--;
 
-            
+            // Controllo per passare dall'ultima immagine alla prima
+            if(this.counter === -1) this.counter = this.images.length - 1;  // -1 perché la length dell'array è 5, ma l'indice parte da 0, quindi senza -1 non verrebbe visualizzata nessuna immagine 
+
+            // Controllo per passare dalla prima immagine all'ultima
+            if(this.counter >= this.images.length) this.counter = 0;
         }
     }
 }).mount('#app')
