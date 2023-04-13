@@ -25,8 +25,8 @@
             <div class="container">
                 <div class="slider">
                     
-                    <div @click="counter--" class="btn-arrow prev">&larr;</div>
-                    <div @click="counter++" class="btn-arrow next">&rarr;</div>
+                    <div @click="increaseDecrease(false)" class="btn-arrow prev">&larr;</div>
+                    <div @click="increaseDecrease(true)" class="btn-arrow next">&rarr;</div>
                     
                     <div class="slider-images">
                         <img :src="images[counter]">

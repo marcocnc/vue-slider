@@ -10,12 +10,18 @@ createApp({
                 'assets/img/4.jpg',
                 'assets/img/5.jpg'
             ],
-            counter: 0
+            counter: 0,
+            isNext : true
         }
     },
 
     methods:{
-        
+        increaseDecrease(isNext){
+            if(isNext) this.counter++;
+            else this.counter--;
+
+            
+        }
     }
 }).mount('#app')
 
