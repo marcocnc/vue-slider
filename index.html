@@ -20,24 +20,27 @@
     <title>Vue Slider</title>
 </head>
 <body>
-    
-    <div class="main-wrapper">
-        <div class="container">
-            <div class="slider">
-                
-                <div class="btn-arrow prev">&larr;</div>
-                <div class="btn-arrow next">&rarr;</div>
-                
-                <div class="slider-images">
+    <div id="app">
+        <div class="main-wrapper">
+            <div class="container">
+                <div class="slider">
                     
-                </div>
-                
-                <div class="circles">
+                    <div @click="counter--" class="btn-arrow prev">&larr;</div>
+                    <div @click="counter++" class="btn-arrow next">&rarr;</div>
                     
+                    <div class="slider-images">
+                        <img :src="images[counter]">
+                        <!-- <img src="assets/img/1.webp"> -->
+                    </div>
+                    
+                    <div class="circles">
+                        
+                    </div>
                 </div>
+                <h1> This is Lil Peep</h1>
             </div>
-            <h1>This is Lil Peep</h1>
         </div>
+
     </div>
 
     <script src="assets/js/script.js"></script>
