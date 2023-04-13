@@ -15,14 +15,17 @@
 
 .container{
     width: 90%;
-    height: 50%;
+    height: 60%;
     max-width: 600px;
     margin: 0 auto;
 }
 
-.container h1{
+h1{
     text-align: center;
     font-size: 50px;
+    position: relative;
+    bottom: 250px;
+    left: 50%;
 }
 
 .slider{
@@ -67,6 +70,33 @@
 .btn-arrow:hover{
     background-color: white;
     color:rgb(92, 21, 92);
+}
+
+
+.thumbs{
+    display: flex;
+    
+    float: left;
+    width: 100%;
+    background-color: black;
+    height: 20%;
+}
+
+.container-thumbs{
+    height: 100%;
+    width: calc(100% / 5);
+    display: flex;
+}
+
+.container-thumbs img{
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.container-thumbs img:hover{
+    opacity: 1;
 }
 
 .circles{

@@ -22,6 +22,7 @@
 <body>
     <div id="app">
         <div class="main-wrapper">
+            <h1>Lil Peep</h1>
             <div class="container">
                 <div class="slider">
                     
@@ -33,16 +34,16 @@
                         <!-- <img src="assets/img/1.webp"> -->
                     </div>
                     
-                    <div class="circles">
-                        
+                    <div class="thumbs">
+                        <div class="container-thumbs">
+                            <img v-for="(i, index) in images" :src="i" @click="counter = index">
+                        </div>
                     </div>
                 </div>
-                <h1> This is Lil Peep</h1>
+                <!-- <h1> This is Lil Peep</h1> -->
             </div>
         </div>
-
     </div>
-
     <script src="assets/js/script.js"></script>
 </body>
 </html>
